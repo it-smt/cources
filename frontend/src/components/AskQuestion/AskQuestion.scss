@@ -1,0 +1,59 @@
+.ask-question {
+  padding: 100px 0 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(255, 239, 220);
+  &__title {
+    color: rgb(17, 16, 16);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 11%;
+    margin: 0 0 60px 0;
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  &__input {
+    padding: 25px 35px;
+    max-width: 636px;
+    width: 100%;
+    color: rgba(17, 16, 16, 0.8);
+    font-family: "Courier New";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    margin: 0 0 20px 0;
+    background: rgb(255, 239, 220);
+    border: 1px solid rgb(92, 8, 8);
+  }
+  .textarea {
+    max-height: 203px;
+    height: 100%;
+    resize: none;
+  }
+  &__btn {
+    margin: 25px 0 0 0;
+    color: rgb(255, 255, 255);
+    font-family: "Courier New";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    text-align: center;
+    max-width: 636px;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.3s ease 0s;
+    background: rgb(92, 8, 8);
+  }
+  &__btn:hover {
+    background: rgb(17, 16, 16);
+  }
+}

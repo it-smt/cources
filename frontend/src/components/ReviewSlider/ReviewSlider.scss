@@ -1,0 +1,94 @@
+.review-slider {
+  position: relative;
+  padding: 0 115px;
+
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 15;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .prev {
+    left: 40px;
+    transform: rotate(-180deg);
+  }
+  .next {
+    right: 40px;
+  }
+}
+
+.review-card {
+  background: #1a1a1a;
+  padding: 46px 45px 40px 45px;
+  color: #fff;
+
+  &__text {
+    color: rgb(255, 239, 220);
+    font-size: 114px;
+    font-weight: 400;
+    line-height: 115px;
+    letter-spacing: 11%;
+    width: 65px;
+    height: 34px;
+    margin: 0 0 30px 0;
+  }
+
+  &__title {
+    color: rgb(255, 239, 220);
+    font-family: "Courier New";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    margin: 0 0 15px 0;
+  }
+
+  &__desc {
+    color: rgb(255, 239, 220);
+    font-family: "Courier New";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    opacity: 0.5;
+    margin: 0 0 20px 0;
+  }
+
+  &__author {
+    color: rgb(255, 239, 220);
+    font-family: "Courier New";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    margin: 0 0 2px 0;
+  }
+
+  &__course {
+    color: rgb(255, 239, 220);
+    font-family: "Courier New";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    opacity: 0.5;
+    margin: 0 0 20px 0;
+  }
+
+  &__btn {
+    width: 147px;
+    height: 42px;
+    background: rgb(255, 239, 220);
+  }
+}
+
+@media (max-width: 1000px) {
+}

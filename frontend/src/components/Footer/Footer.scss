@@ -1,0 +1,53 @@
+.footer {
+  background: rgb(56, 7, 7);
+  padding: 72px 0 81px 0;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+  }
+  &__title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 11%;
+    margin: 0 0 20px 0;
+  }
+  &__phone {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 11%;
+  }
+  &__phone:hover {
+    text-decoration: underline;
+  }
+
+  &__nav {
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    li {
+      margin: 0 0 0 50.91px;
+    }
+    li:first-child {
+      margin: 0;
+    }
+  }
+  &__link {
+    color: rgb(255, 255, 255);
+    font-family: "Courier New";
+    font-size: 26.18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 11%;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+}
