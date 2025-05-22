@@ -1,8 +1,8 @@
 import "./AskQuestion.scss"
 
-export default function AskQuestion() {
+export default function AskQuestion({ type = "white" }) {
   return (
-    <div className="ask-question">
+    <div className={type !== "black" ? "ask-question" : "ask-question black"}>
       <div className="container">
         <h2 className="ask-question__title">Задать вопрос</h2>
         <form className="ask-question__form">

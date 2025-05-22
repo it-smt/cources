@@ -3,6 +3,7 @@ import "./Dropdown.scss"
 
 export default function Dropdown({ title, text }) {
   const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div className={`dropdown ${isOpen ? "open" : ""}`}>
       <button className="dropdown__toggle" onClick={() => setIsOpen(!isOpen)}>

@@ -6,6 +6,9 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  @media (max-width: 560px) {
+    padding: 25px 20px;
+  }
 
   &__number {
     color: rgb(255, 239, 220);
@@ -14,6 +17,9 @@
     line-height: 120%;
     letter-spacing: 11%;
     margin: 0 0 40px 0;
+    @media (max-width: 560px) {
+      font-size: 50px;
+    }
   }
 
   &__title {
@@ -24,6 +30,10 @@
     line-height: 130%;
     letter-spacing: 1%;
     margin: 0 0 10px 0;
+    @media (max-width: 560px) {
+      font-size: 14px;
+      margin: 0 0 5px 0;
+    }
   }
 
   &__description {
@@ -35,6 +45,10 @@
     letter-spacing: 1%;
     margin-bottom: 20px;
     overflow: hidden;
+    @media (max-width: 560px) {
+      font-size: 10px;
+      margin: 0 0 16px 0;
+    }
   }
 
   &__btn-wrapper {
@@ -55,6 +69,10 @@
     width: 100%;
     background: rgb(255, 239, 220);
     transition: all 0.3s ease 0s;
+    @media (max-width: 560px) {
+      font-size: 12px;
+      padding: 8px;
+    }
   }
   &__btn:hover {
     background: rgb(17, 16, 16);
