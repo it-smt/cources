@@ -1,9 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
-import { Link } from "react-router"
 import "./CourseCard.scss"
 
-export default function CourseCard({ number, title, description }) {
+export default function CourseCard({ id_page, number, title, description }) {
   const [hovered, setHovered] = useState(false)
 
   return (
@@ -37,7 +36,9 @@ export default function CourseCard({ number, title, description }) {
         </AnimatePresence>
 
         <div className="card__btn-wrapper">
-          <Link className="card__btn">Записаться</Link>
+          <a href={`/course/${id_page}`} className="card__btn">
+            Записаться
+          </a>
         </div>
       </div>
     </motion.div>

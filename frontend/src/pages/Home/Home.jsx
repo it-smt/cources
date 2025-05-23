@@ -124,6 +124,7 @@ export default function Home() {
                 return (
                   <CourseCard
                     key={idx}
+                    id_page={card.id_page}
                     number={card.number}
                     title={card.title}
                     description={card.description}
