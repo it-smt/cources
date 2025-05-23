@@ -241,6 +241,119 @@
   }
 }
 
+.review-slider {
+  position: relative;
+  padding: 0 115px;
+  @media (max-width: 1010px) {
+    padding: 0 60px;
+  }
+  @media (max-width: 560px) {
+    padding: 0 27px;
+  }
+  .nav-button {
+    position: absolute;
+    @media (max-width: 560px) {
+      display: none;
+    }
+  }
+  .prev {
+    transform: rotate(180deg) translateY(50%);
+    top: 50%;
+    left: 40px;
+    @media (max-width: 1010px) {
+      left: 0;
+    }
+  }
+  .next {
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    @media (max-width: 1010px) {
+      right: 0;
+    }
+  }
+}
+
+.review-card {
+  padding: 45px 45px 40px 45px;
+  background: rgb(17, 16, 16);
+  @media (max-width: 560px) {
+    padding: 25px 30px;
+  }
+  &__text {
+    color: rgb(255, 239, 220);
+    font-size: 114px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 11%;
+    width: 65px;
+    height: 34px;
+    @media (max-width: 560px) {
+      font-size: 80px;
+      width: 40px;
+      height: 26px;
+    }
+  }
+  &__title {
+    margin: 30px 0 15px 0;
+    color: rgb(255, 239, 220);
+    font-family: "Courier New";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    @media (max-width: 560px) {
+      font-size: 14px;
+      margin: 20px 0 15px 0;
+    }
+  }
+  &__desc {
+    color: rgb(255, 239, 220);
+    font-family: "Courier New";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    margin: 0 0 20px 0;
+    opacity: 0.5;
+    @media (max-width: 560px) {
+      font-size: 12px;
+      margin: 0 0 15px 0;
+    }
+  }
+  &__author {
+    color: rgb(255, 239, 220);
+    font-family: "Courier New";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    margin: 0 0 2px 0;
+    @media (max-width: 560px) {
+      font-size: 14px;
+      margin: 0 0 5px 0;
+    }
+  }
+  &__course {
+    color: rgb(255, 239, 220);
+    font-family: "Courier New";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1%;
+    opacity: 0.5;
+  }
+  &__btn {
+    width: 147px;
+    height: 42px;
+    background: rgb(255, 239, 220);
+    margin: 20px 0 0 0;
+    @media (max-width: 560px) {
+      display: none;
+    }
+  }
+}
+
 // End Reviews
 
 // Career After

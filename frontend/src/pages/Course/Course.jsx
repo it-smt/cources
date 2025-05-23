@@ -3,14 +3,23 @@ import Footer from "@components/Footer/Footer"
 import Header from "@components/Header/Header"
 import Module from "@components/Modules/Module"
 import Requirement from "@components/Requirements/Requirement"
+import { addCourse } from "../../utils/addCourse"
 import "./Course.scss"
 
 export default function Course() {
   const steps = [
-    { title: "Выберите курс", text: "dsdsdsd" },
-    { title: "Выберите курс", text: "dsdsdsd" },
-    { title: "Выберите курс", text: "dsdsdsd" },
-    { title: "Выберите курс", text: "dsdsdsd" },
+    {
+      title: "Письмо станет выразительнее",
+      text: "Избавитесь от шаблонов, двусмысленностей и лишнего",
+    },
+    {
+      title: "Текст станет структурнее",
+      text: "Научитесь писать связно, логично и с ритмом",
+    },
+    {
+      title: "Создадите авторский текст",
+      text: "Реализуете знания в итоговой самостоятельной работе",
+    },
   ]
 
   const variants = [
@@ -19,12 +28,12 @@ export default function Course() {
       text: "Каждый посвящён отдельному аспекту писательского стиля",
     },
     {
-      title: "6 модулей",
-      text: "Каждый посвящён отдельному аспекту писательского стиля",
+      title: "Материалы курса",
+      text: "Информация представлена в наглядной и лаконичной форме",
     },
     {
-      title: "6 модулей",
-      text: "Каждый посвящён отдельному аспекту писательского стиля",
+      title: "Финальное задание",
+      text: "Создание собственного текста на основе пройденного материала",
     },
   ]
 
@@ -34,7 +43,34 @@ export default function Course() {
     2: "/img/education.svg",
   }
 
-  const modules = []
+  const modules = [
+    {
+      title: "Введение в стиль",
+      text: "Что такое стиль и почему он важен",
+    },
+    {
+      title: "Поиск авторского голоса",
+      text: "Способы развития индивидуального подхода к письму",
+    },
+    {
+      title: "Ясность и выразительность",
+      text: "Принципы логичного, понятного и выразительного изложения",
+    },
+    {
+      title: "Интонация и ритм",
+      text: "Как управлять звучанием текста и выстраивать его темп",
+    },
+    {
+      title: "Редактирование",
+      text: "Методы устранения избыточности и повышения читаемости",
+    },
+    {
+      title: "Итоговая работа",
+      text: "Создание собственного связного текста",
+    },
+  ]
+
+  const title = "Писательский стиль"
 
   return (
     <div className="wrapper">
@@ -45,8 +81,16 @@ export default function Course() {
         <div className="course-head">
           <div className="container">
             <div className="course-head__container">
-              <h1 className="course-head__title">Писательский стиль</h1>
-              <a href="" className="course-head__btn">
+              <h1 className="course-head__title">{title}</h1>
+              <a
+                onClick={() =>
+                  addCourse({
+                    title: title,
+                    price: "Бесплатно",
+                  })
+                }
+                className="course-head__btn"
+              >
                 Записаться на курс
               </a>
             </div>
@@ -87,21 +131,21 @@ export default function Course() {
                 }
               />
               <Requirement
-                title={"Сложности с выразительностью"}
+                title={"Нужен собственный стиль"}
                 text={
-                  "Текст кажется однообразным или перегруженным лишними словами"
+                  "Есть желание писать так, чтобы тексты были узнаваемыми и живыми"
                 }
               />
               <Requirement
-                title={"Сложности с выразительностью"}
+                title={"Важно улучшить письменную речь"}
                 text={
-                  "Текст кажется однообразным или перегруженным лишними словами"
+                  "Для работы над книгой, блогом, статьями, эссе и другими форматами"
                 }
               />
               <Requirement
-                title={"Сложности с выразительностью"}
+                title={"Готовитесь к созданию текста"}
                 text={
-                  "Текст кажется однообразным или перегруженным лишними словами"
+                  "И хотите заложить стилистическую основу перед началом работы"
                 }
               />
             </div>
@@ -168,7 +212,15 @@ export default function Course() {
                   )
                 })}
               </div>
-              <a href="" className="modules__link">
+              <a
+                onClick={() =>
+                  addCourse({
+                    title: title,
+                    price: "Бесплатно",
+                  })
+                }
+                className="modules__link"
+              >
                 Записаться на курс
               </a>
             </div>

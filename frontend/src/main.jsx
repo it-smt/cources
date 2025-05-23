@@ -1,3 +1,4 @@
+import CareerAdmin from "@pages/CareerAdmin/CareerAdmin"
 import Course from "@pages/Course/Course"
 import Home from "@pages/Home/Home"
 import { StrictMode } from "react"
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course" element={<Course />} />
+        <Route path="/career-admin" element={<CareerAdmin />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
