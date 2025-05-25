@@ -42,12 +42,12 @@ export default function Course() {
                 <div className="course-head__container">
                   <h1 className="course-head__title">{course.title}</h1>
                   <a
-                    onClick={() =>
+                    onClick={() => {
                       addCourse({
                         title: course.title,
                         price: "Бесплатно",
                       })
-                    }
+                    }}
                     className="course-head__btn"
                   >
                     Записаться на курс

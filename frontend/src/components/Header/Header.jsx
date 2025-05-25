@@ -1,16 +1,11 @@
 import { useState } from "react"
 import { Link } from "react-router"
-import MyCourses from "../MyCourses/MyCourses"
 import "./Header.scss"
 
 export default function Header() {
   const [menuActive, setMenuActive] = useState(false)
 
   const toggleMenu = () => setMenuActive(!menuActive)
-
-  const [myCourses, setMyCourses] = useState(false)
-
-  const toggleMyCourses = () => setMyCourses(!myCourses)
 
   return (
     <>
@@ -71,7 +66,7 @@ export default function Header() {
 
                 {/* "Войти" показываем только на мобилке */}
                 <li className="menu__login-mobile">
-                  <Link onClick={toggleMyCourses} to="" className="menu__link">
+                  <Link to={"/my-courses"} className="menu__link">
                     Мои курсы
                   </Link>
                 </li>
@@ -79,13 +74,12 @@ export default function Header() {
             </nav>
 
             {/* "Войти" только на десктопе */}
-            <Link onClick={toggleMyCourses} to="" className="header__link">
+            <Link to={"/my-courses"} className="header__link">
               Мои курсы
             </Link>
           </div>
         </div>
       </header>
-      {myCourses && <MyCourses func={toggleMyCourses} />}
     </>
   )
 }

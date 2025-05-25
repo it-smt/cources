@@ -1,3 +1,5 @@
+import "./Module.scss"
+
 export default function Module({ i, title, text }) {
   return (
     <div className="module">

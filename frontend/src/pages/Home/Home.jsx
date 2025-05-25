@@ -116,6 +116,7 @@ export default function Home() {
         {/* End Create Book */}
 
         {/* Our Courses */}
+
         <div id="ourCourses" className="content__our-courses our-courses">
           <div className="container">
             <h2 className="our-courses__title">Наши курсы</h2>
@@ -175,7 +176,6 @@ export default function Home() {
                         </p>
                         <p className="review-card__author">{review.author}</p>
                         <p className="review-card__course">{review.course}</p>
-                        <button className="review-card__btn" />
                       </div>
                     </SwiperSlide>
                   ))}

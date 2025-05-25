@@ -1,3 +1,5 @@
+import "./Requirement.scss"
+
 export default function Requirement({ title, text }) {
   return (
     <div className="requirement">
